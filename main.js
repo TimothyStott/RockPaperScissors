@@ -46,14 +46,14 @@ function game(){
         let winner = parseInt(playGame(prompt("enter choice: "),getComputerChoice()))
         switch(winner){
             case 0:
-                console.log("Tie");
+                alert("Tie");
                 break;
             case 1:
-                console.log("You win.");
+                alert("You win.");
                 playerWinCount++;
                 break;
             case 2:
-                console.log("Computer Wins");
+                alert("Computer Wins");
                 computerWinCount++;
                 break;
             default:
@@ -61,7 +61,7 @@ function game(){
         }        
     }
 
-    console.log(getWinner(playerWinCount,computerWinCount));
+    alert(getWinner(playerWinCount,computerWinCount));
 
 }
 
